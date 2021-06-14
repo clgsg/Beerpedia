@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700;800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,500;0,700;1,300;1,500;1,700&family=Kaushan+Script&family=Lobster&display=swap&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Details 🍺</title>
+</head>
+<body>
+    <div class="main" id="mainDiv_details">
+        <div class="background_img" id="background_details">
+                <img src="img/maltas_cerveza_sabeer.jpg" alt="Malt, hops, yeast" id="background_photo_details">
+            </div>    
+            <nav>
+                <p><a href="index.html">Home</a> | <a href="list.html">List of beers</a> | Details</p>
+            </nav>
+            <table>
+            <div class="content" id="contentDiv_details">
+            <tr>
+                <td colspan="2", rowspan="4" id="td_img"><img src="img/2.png" alt="Picture of brewery" id="img1_detail"></td>  
+                    <th colspan="2">Name</th>
+                    <th colspan="2">Tagline</th></tr>
+                    <td colspan="2">Arcade Nation</td>
+                    <td colspan="2">Seasonal Black IPA</td>
+                <tr>
+                    <th colspan="4">Description</th></tr>
+                    <td colspan="4">Running the knife-edge between an India Pale Ale and a Stout, this particular style is one we truly love. Black IPAs are a great showcase for the skill of our brew team, balancing so many complex and twisting flavours in the same moment. The citrus, mango and pine from the hops – three of our all-time favourites – play off against the roasty dryness from the malt bill at each and every turn.</td>
+                <tr>
+                
+                    <th colspan="2">Hops</th>
+                    <th colspan="2">Yeast</th>
+                    <th colspan="2">Malt</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Simcoe <br>Amarillo <br>Citra</td>
+                    <td colspan="2">Wyeast 1056 - American Ale™</td>
+                    <td colspan="2">Pale Ale<br>Caramalt <br>Crystal 150 <br>Carafa Special Malt Type 1</td>
+                </tr>
+                <tr>
+                    <th colspan="1">Alc.%</th>
+                    <th colspan="1">IBU bitterness</th>
+                    <td id="mapid" colspan="4" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td colspan="1">5.3%</td>
+                    <td colspan="1">60</td>
+                </tr>
+                <tr>
+                <th colspan="2">Food suggestions</th>
+                </tr>
+                <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Chicken massala</li>
+                        <li>King prawn kebabs</li>
+                        <li>Scallops</li>
+                    </ul>
+                </td>
+                </tr>
+            </table>
+               
+        </div>
+        <div class="buttons" id="buttons_details">
+            <a class="nav_buttons" href="details.html"><button id="button_prev_page_list">Previous beer 🍺</button></a>
+            <a class="nav_buttons" href="index.html"><button id="button_goHome_list">Go to home page</button></a>
+            <a class="nav_buttons" href="details.html"><button id="button_next_page_list">Next beer 🍺</button></a>
+            <a class="nav_buttons" href="details.html"><button id="button_random_index">Get a random beer 🍺</button></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="wtf.js"></script>
+</body>
+</html>

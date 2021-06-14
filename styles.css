@@ -1,0 +1,241 @@
+/*font-family: 'Baloo Tammudu 2', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Crimson Text', serif; */
+
+
+:root {
+    --h1: #123548;
+    --h2: rgb(2, 50, 73);
+    --h3: #128080;
+    --buttonOnClickBckGr: #123548;
+    --buttonOnClickTxtBrdr: #93b7c3;
+    --generalText: #3b3b3b;
+    --background: #f5efe5;
+    --background2: #eeb95e;
+}
+
+@media only screen and (max-width: 768px){
+    .main {
+        width: 90%;
+        height: 90%;
+        padding: 4px;
+        display: flex;
+        position: relative;
+    }
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: medium;
+        color: var(--h1);
+    }
+    
+    #glassOfBeer {
+        max-height: 250px;
+        max-width: 120px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 4px;
+        display: flex;
+        position:relative;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .main {
+        width: 90%;
+        height: 90%;
+        padding: 6px;
+        display: flex;
+    }
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: medium;
+        color: var(--h1);
+    }
+    
+    #glassOfBeer {
+        max-height: 300px;
+        max-width: 180px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 4px;
+        display: flex;
+    }
+}
+body {
+    background-color: var(--background2);
+}
+.main {
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topDiv {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+#topPhoto_index {
+    max-height: 500px;
+    display: flex;
+    align-self: center;
+}
+
+#background_photo_index, #background_photo_list, #background_photo_details {
+    align-self: center;
+    height: 50%;
+    height: 80%;
+    width: 80%;
+}
+
+#background_photo_index {
+    background-image: url('img/grifos1_landscape.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+table img {
+    width: auto;
+    height: 150px;
+}
+
+.beer_card img {
+    width: auto;
+    height: 100px;
+}
+
+
+.card_container{
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.beer_card {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    text-align: center;
+    border: solid 15px transparent;
+    background-color: var(--background);
+}
+
+.buttons {
+    max-width: 90%;
+    min-width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    display: inline-block;
+    border-radius: 8px;
+    border: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    text-decoration: none;
+    background: #93b7c3;
+    color: #123548;
+    font-family: 'Baloo Tammudu 2';
+    font: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    transition: background 800ms ease-in-out, transform 800ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+
+}
+
+
+button:hover, button:focus {
+    background: var(--buttonOnClickBckGr);
+    color: var(--buttonOnClickTxtBrdr);
+    outline: 1px solid var(--buttonOnClickTxtBrdr);
+    outline-offset: -1px;
+    }
+
+
+button:active {
+    background: var(--buttonOnClickBckGr);
+    color: var(--buttonOnClickTxtBrdr);
+    outline: 1px solid var(--buttonOnClickTxtBrdr);
+    outline-offset: -1px;
+    transform: scale(0.85);
+}
+
+table {
+    border: solid 1.5px var(--background);
+    width: 80%;
+    min-width: 180px;
+    table-layout: fixed;
+}
+
+th {
+    font-family:'Baloo Tammudu 2', cursive;
+    font-weight: bolder;
+    background-color: var(--buttonOnClickBckGr);
+    color: var(--buttonOnClickTxtBrdr)
+}
+
+td {
+    font-family: 'Crimson Text', serif;
+    color: var(--generalText);
+    border: var(--generalText);
+    background-color: var(--background);
+}
+
+#img1_detail {
+    align-content: center;
+}
+
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+h2 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+nav {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 25px;
+    justify-self: left;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+a:visited {
+    color: var(--h3);
+}
+
+#mapid {
+    height: 80%;
+}
